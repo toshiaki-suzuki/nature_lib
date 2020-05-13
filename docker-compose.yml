@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+    app:
+        build: ./app
+        command: python manage.py runserver 0.0.0.0:8000
+        volumes:
+            - ./app/:/usr/src/app/
+        ports:
+            - 8000:8000
+        env_file:
+          - ./.my.env
+    db:
+        image: postgres:11.4-alpine
+        volumes:
+            - postgres_data:/var/lib/postgresql/data
+        env_file:
+            - ./.my.env
+volumes:
+    postgres_data:
