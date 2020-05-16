@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('../images/background.jpg');
+  text-align: center;
+}
+
+main {
+  width: 60%;
+  min-width: 240px;
+  min-height: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(240, 245, 220, 0.9);
+  border-radius: 20px;
+}
+
+.title {
+  color: aliceblue;
+  font-size: 50px;
+  font-style: italic;
+  text-shadow: 5px 5px 5px rgb(65, 86, 105);
+}
+
+.explanation {
+  color: #00aaaa;
+  font-style: oblique;
+}
+
+.post {
+  height: auto;
+  width: 70%;
+  border: solid 10px rgba(80, 80, 80, 0.7);
+  margin: 20px auto;
+}
+
+.post > img {
+  height: 100%;
+  width: 100%;
+}
