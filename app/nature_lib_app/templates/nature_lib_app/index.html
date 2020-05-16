@@ -12,24 +12,11 @@
   <main>
     <div>
       <h2 class="explanation">Find your favorite scenary.</h2>
+      {% for item in object_list %}
       <div class="post">
-        <img src="{% static 'nature_lib_app/images/background.jpg' %}">
+        <img src="{% static item.image_path %}">
       </div>
-      <div class="post">
-        <img src="{% static 'nature_lib_app/images/background.jpg' %}">
-      </div>
-      <div class="post">
-        <img src="{% static 'nature_lib_app/images/background.jpg' %}">
-      </div>
-      <div class="post">
-        <img src="{% static 'nature_lib_app/images/background.jpg' %}">
-      </div>
-      <div class="post">
-        <img src="{% static 'nature_lib_app/images/background.jpg' %}">
-      </div>
-      <div class="post">
-        <img src="{% static 'nature_lib_app/images/background.jpg' %}">
-      </div>
+      {% endfor %}
     </div>
   </main>
 </body>

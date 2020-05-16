@@ -1,5 +1,9 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
 
-class IndexView(TemplateView):
+from nature_lib_app.models import Post
+
+class IndexView(ListView):
   template_name = 'nature_lib_app/index.html'
+  model = Post
+
